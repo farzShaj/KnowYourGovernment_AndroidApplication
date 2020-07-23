@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/symb"
+    android:layout_width="95dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="16dp"
+    android:text="OSNAPL"
+    android:textAlignment="viewStart"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/change"
+    android:layout_width="0dp"
+    android:layout_height="25dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="16dp"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/stock"
+    app:layout_constraintStart_toEndOf="@+id/change_indicator"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="TextView" />
+
+  <TextView
+    android:id="@+id/company"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="16dp"
+    android:width="215dp"
+    android:text="TextView"
+    android:textSize="16sp"
+    android:textStyle="italic"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/symb"
+    app:layout_constraintTop_toBottomOf="@+id/symb" />
+
+  <TextView
+    android:id="@+id/stock"
+    android:layout_width="90dp"
+    android:layout_height="25dp"
+    android:layout_marginTop="16dp"
+    android:width="75dp"
+    android:text="TextView"
+    android:textAlignment="viewEnd"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="@+id/symb"
+    app:layout_constraintStart_toEndOf="@+id/symb"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/change_indicator"
+    android:layout_width="16dp"
+    android:layout_height="16dp"
+    android:layout_marginStart="35dp"
+    android:background="@color/resBack"
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toBottomOf="@+id/change"
+    app:layout_constraintStart_toEndOf="@+id/stock"
+    app:layout_constraintTop_toTopOf="@+id/change"
+    app:srcCompat="@color/resBack" />
+</androidx.constraintlayout.widget.ConstraintLayout>
